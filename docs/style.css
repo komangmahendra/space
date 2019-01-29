@@ -1,0 +1,285 @@
+* {
+    margin:0;
+    border:0;
+}
+
+html{
+    margin:0;
+    
+}
+
+body {
+    margin:0;
+    scroll-behavior : smooth;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+#header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color:rgb(51, 204, 204,0.7) ;
+}
+
+#header .logo {
+    color:white;
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    margin-left : 13%;
+    margin-top: 10px;
+}
+
+#header .logo p {
+    font-size: 50px;
+    color: white;
+}
+
+#header .logo p a{
+    color: white;
+}
+
+#header .nav {
+    margin-right: 13%;
+    display: inline-block;
+    float: right;
+    margin-top:20px;
+}
+
+#header li{
+    display: inline-block;
+    margin-top:4%;
+    padding-right: 70px;
+    color : white;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 5px;
+  
+}
+
+#header li a:hover {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#home {
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 153, 204, 0.7), 
+        rgba(51, 204, 204, 0.7)
+    ), url("./image/coworking-space.jpg") ;
+    background-size: cover;
+}
+
+#home .contentHome {
+    margin-top: 16%;
+    margin-left: 28%;
+    position : absolute;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    width: 40%;
+    height: 40%;
+    color:white;
+}
+
+#home .contentHome .tagHome{
+    font-size:18px;
+}
+
+#about {
+    margin-top:-100px;
+    padding-top:100px;
+    height: 1100px;
+}
+
+.subHeader {
+    margin-left : 10%;
+    margin-top : 4%;
+}
+
+
+.subHeader p { 
+    font-family: 'Varela Round', sans-serif;
+    font-size:40px;
+}
+
+#about .aboutImage {
+    display: inline-block;
+    margin-left:10%;
+    margin-top:3%;
+    height: 59%;
+    width: 35%;
+    border-radius: 10px;
+}
+
+#about .aboutContent {
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    margin-top:3%;
+    height: 50%;
+    width: 30%;
+    float:right;
+    margin-right:20%;
+    font-size: 27px;
+}
+
+#about .Visi {
+    font-size: 25px;
+}
+
+#about .Misi{ 
+    font-size: 25px;
+}
+
+#service {
+    margin-top:-100px;
+    background: linear-gradient(
+        rgba(0, 153, 204), 
+        rgba(51, 204, 204)
+    );
+    height: 800px;
+}
+
+#service .serviceAnimation {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-image:url('./image/gambar-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-direction: alternate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: change;
+}
+
+@keyframes change {
+    0%,
+    100% {
+      background-image: url('./image/gambar-1.jpg');
+    }
+    33% {
+      background-image: url('./image/gambar-2.jpeg');
+    }
+    66% {
+      background-image: url('./image/gambar-3.jpg');
+    }
+  }
+  
+
+
+#service .subHeader {
+    float: right;;
+    margin-right : 10%;
+    text-align: right;
+    margin-top:-2%;
+}
+
+
+#contact {
+    margin-top:-100px;
+    padding-top:100px;
+    background-color: white;
+    height: 700px;
+}
+
+#contact .subHeader {
+    margin-top:-2%;
+}
+
+#contact .contactInfo {
+    display: inline-block;
+    border-right: solid rgba(51, 204, 204);
+    margin-top : 3%;
+    width:20%;
+    height: 30%;
+    text-align: right;
+    margin-left:20%;
+    padding-right: 7%;
+}
+
+
+#contact .contactInfo p {
+    font-family: 'Varela Round', sans-serif;
+    color : rgba(51, 204, 204);
+    font-size:50px;
+}
+
+#contact .contactEmail {
+    padding-top:2%;
+    display: inline-block;
+    margin-top : 3%;
+    width: 40%;
+    height:50%;
+    margin-right:7%;
+    float: right;
+}
+
+#contact .contactEmail input[type=text]{
+    border-bottom: rgba(51, 204, 204) 2px solid;
+    font-family: 'Varela Round', sans-serif;
+    font-size:20px;
+    color :  rgba(51, 204, 204);
+    width: 50%;
+    height: 3%;
+}
+
+#contact .contactEmail textarea{
+    border: rgba(51, 204, 204) 2px solid;
+    border-radius:5px;
+    font-family: 'Varela Round', sans-serif;
+    color :  rgba(51, 204, 204);
+    font-size:20px;
+}
+
+#contact .contactEmail button {
+    font-family: 'Varela Round', sans-serif;
+    width: 20%;
+    padding:10px;
+    font-size:20px;
+    background: linear-gradient(
+        rgb(0, 153, 153), 
+        rgba(51, 204, 204, 0.7)
+    );
+    border-radius:5px;
+    color:white;
+}
+
+#footer {
+    background:  rgba(0, 153, 204, 0.7);
+    height: 80px;
+    float:bottom;
+}
+
+#footer .classicFox{
+    color:white;
+    margin-top:20px;
+    padding-top: 10px;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#footer p {
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#footer .socialMedia {
+    margin-top:25px;
+    float: right;
+    margin-right: 200px;
+}
+
+.fab {
+    color : white;
+}
+
+#footer span {
+    display: inline-block;
+    margin-left: 30px;
+}
